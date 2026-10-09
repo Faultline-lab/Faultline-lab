@@ -15,9 +15,9 @@ FAULTLINE is an open-source AI reliability toolkit. We evaluate autonomous agent
 
 | Layer | Repo | What it does |
 |---|---|---|
-| GATE | [faultgate](https://github.com/samirsawarkar/faultgate) | Local-first release gate for AI agents. Checks recorded traces for known failure modes, measures run-to-run noise, and fails only on a real regression. `pip install faultgate` |
-| GUARD | [mcp-guard](https://github.com/samirsawarkar/mcp-guard) | Local firewall for MCP tool calls. Logs every call, flags poisoned tool descriptions, blocks rule violations in enforce mode. `pip install mcp-guard` |
-| EVALUATE | [faultline](https://github.com/samirsawarkar/faultline) | Reliability research workbench: pass^k across 1,350 runs, 8 coded failure modes, deterministic dual-condition oracle. Papers and reproducible results. |
+| GATE | [faultgate](https://github.com/Faultline-lab/faultgate) | Local-first release gate for AI agents. Checks recorded traces for known failure modes, measures run-to-run noise, and fails only on a real regression. `pip install faultgate` |
+| GUARD | [mcp-guard](https://github.com/Faultline-lab/mcp-guard) | Local firewall for MCP tool calls. Logs every call, flags poisoned tool descriptions, blocks rule violations in enforce mode. `pip install mcp-guard` |
+| EVALUATE | [faultline](https://github.com/Faultline-lab/faultline) | Reliability research workbench: pass^k across 1,350 runs, 8 coded failure modes, deterministic dual-condition oracle. Papers and reproducible results. |
 
 ## Team
 
