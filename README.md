@@ -9,7 +9,7 @@ FAULTLINE builds open-source tools for AI agent reliability: measure repeated ru
 | **[faultgate](https://www.faultline-labs.com/products/faultgate/)** | Check recorded AI agent traces for failure modes and business-rule violations; compare candidate runs with measured baseline variation and return PASS, FAIL, or INCONCLUSIVE in CI. | `pip install faultgate` | [Source](https://github.com/Faultline-lab/faultgate) · [PyPI](https://pypi.org/project/faultgate/) · [Docs](https://www.faultline-labs.com/docs/) |
 | **[MCP Guard](https://www.faultline-labs.com/products/mcp-guard/)** | Monitor local stdio MCP servers for changed tool definitions and tool-description poisoning; audit calls by default and block supported rule violations in enforce mode. | `pip install mcp-integrity` | [Source](https://github.com/Faultline-lab/mcp-guard) · [PyPI](https://pypi.org/project/mcp-integrity/) |
 
-**Naming:** FAULTLINE MCP Guard is the product. Its Python package and command are named `mcp-integrity`. `pip install mcp-guard` is not the install command for this product.
+**Naming:** FAULTLINE MCP Guard is the product. Its Python package and command are named `mcp-integrity`; install it with `pip install mcp-integrity`.
 
 ## Research
 
