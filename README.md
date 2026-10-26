@@ -1,28 +1,20 @@
 # FAULTLINE
 
-**Agents fail in patterns. Ship the ones you can measure.**
+FAULTLINE builds open-source tools for AI agent reliability: measure repeated runs, check recorded traces before a release, and monitor MCP tool calls at runtime. [Explore the platform](https://www.faultline-labs.com/platform/).
 
-FAULTLINE is an open-source AI reliability toolkit. We evaluate autonomous agents under repeated execution, gate releases on evidence instead of thresholds, and guard tool calls at runtime against MCP poisoning. Deterministic, reproducible, no LLM judge.
+## Installable tools
 
-| | |
-|---|---|
-| **30.32% → 7.41%** | pooled attack success rate, with contract |
-| **1,350** | graded runs, no LLM judge |
-| **684** | tests passing |
-| **16** | research projects, P01–P16 |
+| Product | Use it for | Install | Details |
+| --- | --- | --- | --- |
+| **[faultgate](https://www.faultline-labs.com/products/faultgate/)** | Check recorded AI agent traces for failure modes and business-rule violations; compare candidate runs with measured baseline variation and return PASS, FAIL, or INCONCLUSIVE in CI. | `pip install faultgate` | [Source](https://github.com/Faultline-lab/faultgate) · [PyPI](https://pypi.org/project/faultgate/) · [Docs](https://www.faultline-labs.com/docs/) |
+| **[MCP Guard](https://www.faultline-labs.com/products/mcp-guard/)** | Monitor local stdio MCP servers for changed tool definitions and tool-description poisoning; audit calls by default and block supported rule violations in enforce mode. | `pip install mcp-integrity` | [Source](https://github.com/Faultline-lab/mcp-guard) · [PyPI](https://pypi.org/project/mcp-integrity/) |
 
-## Products
+**Naming:** FAULTLINE MCP Guard is the product. Its Python package and command are named `mcp-integrity`. `pip install mcp-guard` is not the install command for this product.
 
-| Layer | Repo | What it does |
-|---|---|---|
-| GATE | [faultgate](https://github.com/Faultline-lab/faultgate) | Local-first release gate for AI agents. Checks recorded traces for known failure modes, measures run-to-run noise, and fails only on a real regression. `pip install faultgate` |
-| GUARD | [mcp-guard](https://github.com/Faultline-lab/mcp-guard) | Local firewall for MCP tool calls. Logs every call, flags poisoned tool descriptions, blocks rule violations in enforce mode. `pip install mcp-guard` |
-| EVALUATE | [faultline](https://github.com/Faultline-lab/faultline) | Reliability research workbench: pass^k across 1,350 runs, 8 coded failure modes, deterministic dual-condition oracle. Papers and reproducible results. |
+## Research
 
-## Team
+The [FAULTLINE research workbench](https://github.com/Faultline-lab/faultline) contains reproducible studies of agent failures and reliability. Read the [research pages](https://www.faultline-labs.com/research/) for methods and results.
 
-Built and maintained by [Samir Sawarkar (@samirsawarkar)](https://github.com/samirsawarkar).
+## Team and links
 
-## Links
-
-[faultline-labs.com](https://faultline-labs.com) · [Research](https://faultline-labs.com/research) · [samir@faultline-labs.com](mailto:samir@faultline-labs.com)
+Built and maintained by [Samir Sawarkar (@samirsawarkar)](https://github.com/samirsawarkar). [Website](https://www.faultline-labs.com/) · [Contact](https://www.faultline-labs.com/contact/)
